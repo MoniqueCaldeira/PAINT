@@ -95,3 +95,7 @@ canvas{
 .button__size[data-size="30"] > span {
    height: 30px;
 }
+
+.active{
+   background-color: #f2f2f2;
+}
