@@ -39,7 +39,7 @@ canvas.addEventListener("mousemove", ({ clientX, clientY }) => {
       erase(clientX, clientY);
    }
 })
-
+// função para desenhar
 const draw = (x, y) => {
    ctx.globalCompositeOperation = "source-over"
    ctx.beginPath()
