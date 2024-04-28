@@ -3,16 +3,25 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-   
-   <link rel="stylesheet" href="style.css" type="text/css">
+   <link rel="stylesheet" href="style.css">
+
    <title>Paint</title>
 </head>
 <body>
    <section class="container">
 
-      <canvas width="900" height="600"></canvas>
+      <button class="button__tool">
+         <input type="color" class="bg_color">
+      </button>
 
+    <style>
+      #MyCanvas {
+         background-color: white;
+      }
+   </style>
+      <canvas id="MyCanvas" height="500px"></canvas>
+
+   <div class="menu">
       <div>
          <section class="tool-box">
             <button class="button__tool active" data-action="brush">
@@ -20,7 +29,7 @@
             </button>
 
             <button class="button__tool" data-action="rubber">
-               <span class="material-symbols-outlined">ink_eraser</span>
+               <span class="material-symbols-outlined">eraser</span>
             </button>
 
             <button class="button__tool">
@@ -52,8 +61,9 @@
             </button>
          </section>
       </div>
+   </div>
 
    </section>
-   <script src="index.js"></script>
+   <script src="script.js"></script>
 </body>
 </html> 
